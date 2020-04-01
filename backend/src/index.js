@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const routes = require('./routes'); // "./" pra referenciar um arquivo na mesma pasta "../" para voltar uma pasta
 const app = express();
 
@@ -41,7 +42,7 @@ app.listen(3333);
 
 /**
  * Driver: SELECT * FROM users
- * Query Builder: tavle('users').select('*').where()  
+ * Query Builder: table('users').select('*').where()  
 */
 
 
